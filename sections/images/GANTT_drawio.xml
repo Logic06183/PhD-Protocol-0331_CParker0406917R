@@ -1,0 +1,228 @@
+<mxfile host="app.diagrams.net" modified="2025-04-09T20:10:00.000Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="1" version="21.7.5" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="PhD Project Timeline - Urban Heat and Health in Johannesburg" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="20" width="650" height="30" as="geometry" />
+        </mxCell>
+        <!-- Header Row -->
+        <mxCell id="3" value="Year 1" style="text;html=1;strokeColor=none;fillColor=#0057A4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Year 2" style="text;html=1;strokeColor=none;fillColor=#0057A4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="500" y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Year 3" style="text;html=1;strokeColor=none;fillColor=#0057A4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="740" y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <!-- Months Header -->
+        <mxCell id="6" value="Q1" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Q2" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Q3" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Q4" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Q1" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Q2" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Q3" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Q4" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Q1" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Q2" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Q3" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Q4" style="text;html=1;strokeColor=none;fillColor=#D6E8FF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Task Labels -->
+        <mxCell id="18" value="Phase 1: Protocol Development" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Phase 2: Data Acquisition &amp; Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Phase 3: Heat Vulnerability Mapping" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Phase 4: Explanatory Modeling" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Phase 5: Predictive Modeling" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Phase 6: Thesis Writing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Gantt Bars -->
+        <mxCell id="24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="290" y="160" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="380" y="200" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="500" y="240" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="800" y="320" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Milestones -->
+        <mxCell id="30" value="M1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="115" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="M2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="430" y="155" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="M3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="550" y="195" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="M4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="730" y="235" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="M5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="910" y="275" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="M6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="970" y="315" width="40" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Publications -->
+        <mxCell id="36" value="Publications" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="Protocol Paper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="350" y="380" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="Vulnerability Paper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="430" y="380" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="Explanatory ML Paper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="620" y="380" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="Predictive Modeling Paper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="380" width="160" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Faculty Assessment -->
+        <mxCell id="41" value="Faculty Assessment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="430" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="Initial Review" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="320" y="430" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="Annual Progress Review" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="500" y="430" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="Annual Progress Review" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="740" y="430" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="Thesis Submission" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="920" y="430" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="46" value="Legend:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD200;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="150" y="480" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="Research Phase" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="475" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="M1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0057A4;strokeColor=#6c8ebf;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="475" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="Milestone" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="475" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="480" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="Publication" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="475" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="600" y="480" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="Faculty Assessment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="475" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Milestone Descriptions -->
+        <mxCell id="55" value="Milestone Descriptions:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="M1: Protocol Finalization (Month 3)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="550" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="M2: Data Acquisition Completion (Month 9)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="570" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="M3: Vulnerability Mapping Completion (Month 18)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="590" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="M4: Model Validation (Month 30)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="610" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="M5: Predictive Model Deployment (Month 33)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="630" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="M6: Thesis Submission (Month 36)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="650" width="240" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Publication Descriptions -->
+        <mxCell id="62" value="Publication Plan:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="520" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="1. Protocol Paper (Month 4): 'Leveraging data science and machine learning for urban climate adaptation in two major African cities: a HE2AT Center study protocol'" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="550" width="580" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="2. Vulnerability Paper (Month 9): 'Quantifying intra-urban socio-economic and environmental vulnerability to extreme heat events in Johannesburg, South Africa'" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="580" width="580" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="3. Explanatory ML Paper (Month 19): 'Uncovering Heat-Health Pathways in Johannesburg: An Explanatory Machine Learning Approach Using Harmonized Urban Cohort Data'" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="610" width="580" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="4. Predictive Modeling Paper (Month 33): 'Developing Stratified Heat-Health Early Warning Systems for Johannesburg: Integration of Vulnerability Mapping and Predictive Modeling'" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="640" width="580" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Risk Note -->
+        <mxCell id="67" value="Primary risks include data accessibility challenges, computational constraints, and model performance issues. Detailed timelines, activities, and risk mitigation strategies are provided in Appendix C." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="80" y="680" width="900" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
