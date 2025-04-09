@@ -1,0 +1,229 @@
+% Main Document File for PhD Proposal
+% Urban Heat and Health in Johannesburg: A Multidimensional Analysis of Vulnerability, Explanatory Modelling, and Predictive Outcomes
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Load newtx packages first without amssymb
+\usepackage{newtxtext} % Use Times New Roman instead of times package (matches appendix)
+\usepackage{newtxmath} % Times-like math fonts (matches appendix)
+
+% Only load amsmath, not amssymb
+\usepackage{amsmath}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes.geometric,shapes.symbols} % Added shapes for regular polygons
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{lastpage} % For total page count
+\usepackage{enumitem} % For improved list customization (matches appendix)
+\usepackage{hyperref} % Moved to load last to avoid conflicts
+
+% Define version and date information
+\newcommand{\protocolversion}{v1.0} % Change this for each new version
+\newcommand{\revisiondate}{\today} % This uses today's date, or you can specify a fixed date
+
+% Define colors
+\definecolor{witsprimary}{RGB}{0, 87, 164} % Wits University blue
+\definecolor{witssecondary}{RGB}{255, 210, 0} % Wits University gold
+
+% Set up headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{PhD Protocol: Urban Heat and Health in Johannesburg}
+\fancyhead[R]{Craig Parker}
+\fancyfoot[L]{\small\textit{Version \protocolversion}}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[R]{\small\textit{Last updated: \revisiondate}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% For first page - add version to title page
+\fancypagestyle{firstpage}{
+    \fancyhf{}
+    \fancyfoot[L]{\small\textit{Version \protocolversion}}
+    \fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+    \fancyfoot[R]{\small\textit{Last updated: \revisiondate}}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% List formatting to match appendix
+\setlist{nosep} % Reduce list spacing
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
+% Table formatting to match appendix
+\renewcommand{\arraystretch}{1.3} % More space between rows
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % Left-aligned with width
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Center-aligned with width
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % Right-aligned with width
+
+% Caption settings to match appendix
+\captionsetup{
+  format=plain,
+  font=normal,
+  labelfont=bf,
+  justification=justified,
+  singlelinecheck=true
+}
+
+% Set headheight to avoid warnings
+\setlength{\headheight}{15pt}
+
+% Hyperlink setup - should be last for compatibility reasons
+\hypersetup{
+    colorlinks=true,
+    linkcolor=witsprimary,
+    filecolor=witsprimary,
+    urlcolor=witsprimary,
+    citecolor=witsprimary,
+    pdftitle={Urban Heat and Health in Johannesburg: PhD Protocol},
+    pdfauthor={Craig Parker},
+    pdfsubject={PhD Protocol},
+    pdfkeywords={heat, health, climate change, machine learning, vulnerability, Johannesburg}
+}
+
+\doublespacing % Double spacing as per guidelines
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \thispagestyle{firstpage} % Use the special first page style
+    \centering
+    \includegraphics[width=0.4\textwidth]{wits_logo.png}\\[1cm]
+    
+    {\scshape\LARGE University of the Witwatersrand \\
+    School of Public Health \par}
+    \vspace{1.5cm}
+    
+    {\huge\bfseries Urban Heat and Health in Johannesburg:\\
+    A Multidimensional Analysis of Vulnerability, \\
+    Explanatory Modelling, and Predictive Outcomes\par}
+    \vspace{1.5cm}
+    
+    {\large\textit{PhD Protocol}\par}
+    \vspace{0.5cm}
+    
+    {\normalsize\textit{Version \protocolversion}\par} % Version number
+    {\normalsize\textit{Last updated: \revisiondate}\par} % Last updated date
+    \vspace{0.5cm}
+    
+    {\large Submitted by:\par}
+    {\Large Craig Parker, MSc, MM-PDM, BS\par}
+    {\large Wits Planetary Health Research\par}
+    \vspace{0.5cm}
+    
+    {\large Supervisors:\par}
+    {\large Dr. Admire Chikandiwa\par}
+    {\large Professor Matthew Chersich\par}
+    {\large Professor Akbar Waljee\par}
+    {\large Dr. Christopher Jack\par}
+    \vfill
+    
+    {\large \today\par}
+\end{titlepage}
+
+% Table of contents
+\tableofcontents
+\newpage
+
+% Include the modular sections without forced page breaks
+\input{sections/abstract}
+
+\input{sections/introduction}
+
+\input{sections/aims_objectives}
+
+\input{sections/methodology}
+
+\input{sections/ethical}
+
+\input{sections/outcomes}
+
+% Project Timeline Section
+\input{sections/timeline}
+
+\input{sections/supervision}
+
+\input{sections/references}
+
+% Clear note about appendices being in a separate document
+% Clear note about appendices being in a separate document
+\newpage
+\section*{Appendices}
+\begin{center}
+\large\textbf{NOTE:} \\
+\normalsize
+All appendices and supplementary tables are provided in a separate document titled:\\
+\textit{"Appendices: Data Management and Methodological Tables for PhD Proposal"}\\
+\vspace{0.5cm}
+This separation has been implemented to comply with page count requirements.\\
+\vspace{0.5cm}
+The appendix document includes:
+\end{center}
+
+\begin{itemize}[leftmargin=*, itemsep=0.3em]
+    \item \textbf{Appendix F: Supplementary Figures}
+    \begin{itemize}[leftmargin=*]
+        \item F.1 Project Framework: Heat Vulnerability Assessment
+        \item F.2 Maximum Temperature Distribution
+        \item F.3 Seasonal Heat Pattern Analysis
+        \item F.4 Global Temperature Trends
+        \item F.5 Urban Heat Stress Patterns
+        \item F.6 Heat Vulnerability Index Components
+        \item F.7 Heat-Health Mechanisms Pathways
+        \item F.8 Data Sources and Integration Framework
+    \end{itemize}
+    
+    \item \textbf{Data Management and Methodological Tables}
+    \begin{itemize}[leftmargin=*]
+        \item Table 1: Key Data Sources for Heat-Health Research
+        \item Table 2: Data Processing and Integration Workflow
+        \item Table 3: Data Access Levels and Security Measures
+        \item Table 4: Geographic De-identification Techniques
+        \item Table 5: Data Request and Approval Process
+        \item Table 6: Methodological Approaches for Research Objectives
+        \item Table 7: Time-Lag Analysis of Heat-Health Effects
+    \end{itemize}
+    
+    \item \textbf{Appendix A:} Roles and Responsibilities in Data Management
+    
+    \item \textbf{Appendix B:} POPIA Compliance Framework
+    
+    \item \textbf{Appendix C:} Detailed Project Timeline and Risk Assessment
+    \begin{itemize}[leftmargin=*]
+        \item C.1 Comprehensive Timeline of Research Activities
+        \item C.2 Detailed Milestone Descriptions
+        \item C.3 Risk Assessment and Contingency Planning
+    \end{itemize}
+    
+    \item \textbf{Appendix D:} Comprehensive Outcomes Impact Assessment and Dissemination Strategy
+    \begin{itemize}[leftmargin=*]
+        \item D.1 Detailed Research Output Framework
+        \item D.2 Extended Impact Assessment Framework
+        \item D.3 Comprehensive Knowledge Dissemination Strategy
+        \item D.4 Key Research Milestones and Quality Assurance
+    \end{itemize}
+    
+    \item \textbf{Appendix E:} Supervision Framework and Team
+    \begin{itemize}[leftmargin=*]
+        \item E.1 Supervisory Team
+        \item E.2 Supervisor Profiles
+        \item E.3 Supervisory Arrangements
+        \item E.4 Advisory Committee
+    \end{itemize}
+
+\end{document}

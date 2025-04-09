@@ -1,0 +1,83 @@
+\section{Methodology}
+
+\subsection{Study Design and Setting}
+This research employs a multi-method approach integrating geospatial analysis, statistical modelling, and machine learning to investigate heat-health relationships in Johannesburg, South Africa. Johannesburg presents an ideal study setting due to its subtropical highland climate, significant socioeconomic disparities, pronounced Urban Heat Island effects, diverse urban morphology, and high prevalence of both communicable diseases and non-communicable conditions that may interact with heat vulnerability patterns.
+
+\subsection{Data Sources and Collection}
+Health data spanning 2000--2022 will be drawn from clinical trials and cohort studies conducted in Johannesburg that meet defined inclusion criteria: cohorts or trials with 200 adult participants, prospectively collected data, comprehensive clinical and laboratory variables, and appropriate ethics approvals. The dataset will include clinical indicators and laboratory tests covering renal, metabolic and inflammatory markers and demographic/socioeconomic factors. Given potential confounding effects, 2020--2022 data will undergo stratified analysis to account for pandemic-related influences on healthcare utilization and outcomes. A comprehensive overview of all data sources is provided in Appendix Table 1.
+
+
+\subsubsection{Environmental and Socioeconomic Data}
+Environmental parameters will be derived from multiple validated sources, including Landsat 8 \citep{landsat8}, Sentinel-2 \citep{sentinel2}, ERA5 reanalysis \citep{era5}, and the Copernicus Climate Data Store \citep{copernicus_climate_data_store}. These data streams will provide high-resolution measurements of Land Surface Temperature, vegetation indices, air temperature, and derived heat metrics. Socioeconomic determinants will be incorporated through ward-level data from the Gauteng City-Region Observatory Quality of Life Surveys \citep{gcro_qol_survey}, capturing housing quality, infrastructure adequacy, and healthcare access. The data processing and integration workflow is detailed in Appendix Table 2, with specific security measures outlined in Appendix Table 3.
+
+\subsubsection{Sample Size Justification}
+The study's statistical power is ensured through comprehensive data coverage and adequate sample sizes. For vulnerability mapping, data from all 135 wards provide complete spatial coverage. For the explanatory and predictive modelling components, the combined dataset of approximately 5,000--7,000 records substantially exceeds the minimum requirement of 10-20 observations per predictive feature (with 20-25 features anticipated). This sample size provides >80\% power to detect clinically meaningful effects, calculated as:
+
+\begin{equation}
+n = \frac{2(Z_{\alpha/2} + Z_{\beta})^2\sigma^2}{\Delta^2}
+\end{equation}
+
+where $Z_{\alpha/2}$ and $Z_{\beta}$ are standard normal deviates for type I and II errors, $\sigma^2$ is the expected variance, and $\Delta$ is the minimal detectable effect size.
+
+\subsection{Objective 1: Vulnerability Mapping}
+Geospatial data will undergo rigorous preprocessing, including normalization, completeness assessments, and spatial harmonization. The methodology employs Geographically Weighted Principal Component Analysis \citep{Harris2011} to develop a comprehensive Heat Vulnerability Index that accounts for spatial non-stationarity in vulnerability relationships. The local GW-PCA model at location $i$ can be formulated as:
+
+\begin{equation}
+X_i = V_i\Lambda_iV^T_i + \varepsilon_i
+\end{equation}
+
+where $X_i$ represents the local data matrix, $V_i$ contains the local eigenvectors, $\Lambda_i$ is the diagonal matrix of local eigenvalues, and $\varepsilon_i$ is the error term.
+
+Spatial clustering analysis using Local Indicators of Spatial Association will identify significant (p<0.05) vulnerability hot spots and outliers \citep{Anselin1995}. The local Moran's I statistic will be calculated as:
+
+\begin{equation}
+I_i = z_i \sum_{j} w_{ij}z_j
+\end{equation}
+
+where $ z_i$ and $ z_j$ are the standardized values of the vulnerability index, and $ w_ij$ represents the spatial weight between locations $ i$ and $ j$. Given the sensitive nature of location data, geographic de-identification techniques outlined in Appendix Table 4 will be employed to protect privacy while maintaining analytical validity.
+
+\subsection{Objective 2: Explanatory Modeling}
+The explanatory modelling framework employs a two-stage clinical-computational approach examining both physiological pathways and temporal effects of heat exposure. This framework harmonizes data from multiple cohort studies to investigate underlying mechanisms across different physiological systems.
+
+\subsubsection{Clinical Pathway Validation}
+Working with clinical experts, we will develop comprehensive physiological pathway diagrams representing hypothesized heat-health mechanisms at multiple biological levels. These diagrams will be rigorously validated through expert consensus panels and systematic literature review, establishing physiologically plausible causal pathways before computational analysis. This clinical foundation ensures that subsequent machine learning insights remain grounded in biological reality while allowing for novel relationship discovery.
+
+\subsubsection{Multi-System Physiological Analysis}
+Physiologically, the analysis will systematically investigate how heat stress affects renal function through creatinine, electrolytes, and GFR measurements; metabolic pathways including glucose dysregulation, insulin sensitivity changes, and mitochondrial function; and inflammatory responses through markers such as CRP, IL-6, and other cytokine profiles \citep{Desai2023}. Of particular focus will be the metabolic stress pathway through which heat exposure influences glucose metabolism and overall metabolic health. Appendix F.7 (Metabolic Pathway Analysis) provides visualisations of these pathways.
+
+\subsubsection{Two-Stage Modeling Approach}
+Our analytical strategy follows a structured two-stage process that begins with hypothesis generation and concludes with targeted hypothesis testing. In the initial hypothesis generation stage, we will apply interpretable machine learning techniques to identify potential heat-health relationships without imposing strong a priori assumptions \citep{Schwartz2022}. This first stage employs Random Forest models with permutation importance metrics to identify key predictive factors, XGBoost models with SHAP (SHapley Additive exPlanations) values to quantify feature contributions and interactions, and LIME (Local Interpretable Model-agnostic Explanations) to decompose predictions for individual cases. The SHAP value for feature $j$ is defined as:
+
+\begin{equation}
+\phi_j = \sum_{S \subseteq N \setminus \{j\}} \frac{|S|!(|N|-|S|-1)!}{|N|!}[f_x(S \cup \{j\}) - f_x(S)]
+\end{equation}
+
+\noindent where $N$ is the set of all features, $S$ is a subset of features, $f_x(S)$ is the model prediction for feature set $S$, and the summation is over all possible feature subsets.
+
+The second stage focuses on hypothesis testing through targeted feature engineering. Based on insights from clinical pathways and initial model interpretations, we will develop composite variables representing specific physiological mechanisms such as cumulative heat stress indices, dehydration risk scores, and inflammatory burden metrics. Additional engineered features will include integrated heat-humidity stress indices capturing physiological strain, time-weighted exposure variables reflecting adaptation mechanisms, interaction terms between existing comorbidities and heat metrics, and system-specific vulnerability scores derived from multiple biomarkers. These engineered features will be tested in subsequent models to evaluate their physiological relevance and predictive power, creating an iterative feedback loop between clinical understanding and data-driven discovery.
+
+\subsubsection{Validation Framework}
+The hypothesized relationships and mechanisms identified through this process will undergo formal validation through multiple complementary approaches. We will employ K-fold cross-validation stratified by demographic and clinical subgroups to assess model stability across different populations. Confidence intervals will be established through bootstrapping with 1,000 resamples, while sensitivity analyses across varying model parameters and threshold definitions will test the robustness of modelling assumptions. Permutation testing will help distinguish true effects from chance correlations, and distributed lag modelling will validate temporal relationships. This comprehensive validation framework ensures findings reflect genuine heat-health relationships rather than statistical artefacts. Notably, the final DLNM models serve as a rigorous statistical validation of the mechanistic hypotheses generated through the interpretable machine learning and feature engineering process\citep{Gasparrini2015}.
+
+This iterative clinical-computational approach explicitly incorporates expert knowledge into the machine learning pipeline while allowing the data to reveal relationships that may confirm, refine, or contradict clinically-derived hypotheses. The resulting insights will establish a foundation for targeted interventions based on validated physiological mechanisms rather than purely statistical associations.
+
+\subsection{Objective 3: Predictive Modeling}
+The predictive framework integrates environmental, socioeconomic, and health data to forecast heat-related health outcomes within a 24--72 hour horizon. The methodology employs advanced feature engineering combining domain knowledge with statistical selection techniques including mutual information analysis and recursive feature elimination with cross-validation to identify optimal predictive variables while controlling for collinearity.
+
+Rather than relying on a single algorithm, the approach employs a carefully calibrated ensemble that combines gradient boosting methods, random forests, and other algorithms through a meta-learning framework. For the gradient boosting component, the objective function being optimized is:
+
+\begin{equation}
+\mathcal{L}(\phi) = \sum^n_{i=1} l(y_i, \hat{y}_i) + \sum^K_{k=1} \Omega(f_k)
+\end{equation}
+
+where $l$ is the loss function comparing the prediction $\hat{y}_i$ with the target $y_i$, and $\Omega$ represents the regularization term controlling model complexity.
+
+The validation strategy employs forward-chaining time-series cross-validation to realistically simulate forecasting scenarios, with performance evaluated using metrics including area under the receiver operating characteristic curve (AUC-ROC):
+
+\begin{equation}
+\text{AUC-ROC} = \int^1_0 TPR(FPR^{-1}(t))dt
+\end{equation}
+
+where $TPR$ is the true positive rate and $FPR$ is the false positive rate at different classification thresholds.
+
+The modelling output translates into actionable intelligence through stratified risk profiles, geospatial risk mapping, and population-specific threshold recommendations. This translation from statistical prediction to practical application ensures research findings can directly inform heat-health interventions and resource allocation for vulnerable populations in Johannesburg.
