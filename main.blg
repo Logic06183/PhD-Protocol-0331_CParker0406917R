@@ -1,50 +1,48 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
-Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
 Warning--empty journal in Giombini2022
-You've used 39 entries,
+You've used 45 entries,
             1935 wiz_defined-function locations,
-            732 strings with 12149 characters,
-and the built_in function-call counts, 15492 in all, are:
-= -- 1481
-> -- 808
-< -- 26
-+ -- 296
-- -- 282
-* -- 1355
-:= -- 2824
-add.period$ -- 119
-call.type$ -- 39
-change.case$ -- 331
-chr.to.int$ -- 39
-cite$ -- 40
-duplicate$ -- 507
-empty$ -- 933
-format.name$ -- 342
-if$ -- 2906
+            772 strings with 13612 characters,
+and the built_in function-call counts, 18517 in all, are:
+= -- 1755
+> -- 990
+< -- 27
++ -- 362
+- -- 348
+* -- 1657
+:= -- 3360
+add.period$ -- 137
+call.type$ -- 45
+change.case$ -- 393
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 591
+empty$ -- 1119
+format.name$ -- 414
+if$ -- 3475
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 200
-num.names$ -- 117
-pop$ -- 235
+missing$ -- 35
+newline$ -- 230
+num.names$ -- 135
+pop$ -- 284
 preamble$ -- 1
-purify$ -- 331
+purify$ -- 393
 quote$ -- 0
-skip$ -- 413
+skip$ -- 475
 stack$ -- 0
-substring$ -- 953
-swap$ -- 36
+substring$ -- 1176
+swap$ -- 42
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 232
+type$ -- 268
 warning$ -- 1
-while$ -- 113
+while$ -- 132
 width$ -- 0
-write$ -- 501
+write$ -- 579
 (There was 1 warning)

@@ -3,30 +3,40 @@
 \contentsline {section}{\numberline {1}Introduction and Background}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Climate Change and Heat-Health Impacts in the Johannesburg Context}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Socio-Spatial Inequity and Heat Vulnerability}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Conceptual Framework and Research Gaps}{5}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Aims and Objectives}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Primary Aim}{6}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Specific Objectives}{7}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Objective 1: Intra-urban Heat Vulnerability Mapping}{7}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Objective 2: Heat-Health Dynamics Exploration}{7}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Objective 3: Stratified Heat-Health Prediction Modeling}{8}{subsubsection.2.2.3}%
-\contentsline {section}{\numberline {3}Methodology}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Study Design and Setting}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Data Sources and Collection}{9}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Environmental and Socioeconomic Data}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Sample Size Justification}{10}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Objective 1: Vulnerability Mapping}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Objective 2: Explanatory Modeling}{11}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Clinical Pathway Validation}{11}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Multi-System Physiological Analysis}{11}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Two-Stage Modeling Approach}{12}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}Validation Framework}{13}{subsubsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.5}Objective 3: Predictive Modeling}{13}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Ethical Considerations}{14}{section.4}%
-\contentsline {section}{\numberline {5}Expected Outcomes and Impact}{15}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Research Outputs}{15}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Anticipated Impact}{15}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Knowledge Translation}{15}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Project Timeline}{16}{section.6}%
-\contentsline {section}{\numberline {7}Supervision}{17}{section.7}%
-\contentsline {section}{\numberline {8}References}{17}{section.8}%
+\contentsline {subsection}{\numberline {1.3}Research Context and Positionality}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Conceptual Framework and Research Gaps}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Recent Evidence on Heat Mortality}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Research Gaps in Urban African Contexts}{7}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Aims and Objectives}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Primary Aim}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Specific Objectives}{8}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Objective 1: Intra-urban Heat Vulnerability Mapping}{8}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Objective 2: Heat-Health Dynamics Exploration}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Objective 3: Stratified Heat-Health Prediction Modeling}{9}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3}Methodology}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Study Design and Setting}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Data Sources and Collection}{11}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Environmental and Socioeconomic Data}{11}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Limitations of Data Sources}{11}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}COVID-19 Considerations}{12}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Sample Size Justification}{12}{subsubsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.3}Objective 1: Vulnerability Mapping}{12}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Mixed Socioeconomic Areas}{13}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Objective 2: Explanatory Modeling}{14}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Clinical Pathway Validation}{14}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Multi-System Physiological Analysis}{14}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Two-Stage Modeling Approach}{14}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Validation Framework}{15}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Causal Machine Learning Approaches}{16}{subsubsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.5}Objective 3: Predictive Modeling}{17}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Model Accuracy and Reliability Measures}{17}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.6}Forecast Window Selection}{18}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Ethical Considerations}{18}{section.4}%
+\contentsline {section}{\numberline {5}Expected Outcomes and Impact}{19}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Research Outputs}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Anticipated Impact and Infrastructural Justice Framing}{19}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Climate-Resilient Cities and Infrastructural Justice}{19}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}Knowledge Translation}{20}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Project Timeline}{20}{section.6}%
+\contentsline {section}{\numberline {7}Supervision}{21}{section.7}%
+\contentsline {section}{\numberline {8}References}{22}{section.8}%

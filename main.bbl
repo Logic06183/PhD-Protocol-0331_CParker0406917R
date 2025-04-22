@@ -1,24 +1,24 @@
 \begin{thebibliography}{}
 
 \bibitem[Analitis et~al., 2018]{Analitis2018}
-Analitis, A., De'~Donato, F., Scortichini, M., Lanki, T., Basagana, X.,
-  Ballester, F., Astrom, C., Paldy, A., Pascal, M., Gasparrini, A., et~al.
-  (2018).
-\newblock Synergistic effects of ambient temperature and air pollution on
-  health in europe: results from the phase project.
-\newblock {\em International journal of environmental research and public
-  health}, 15(9):1856.
+Analitis, A., De'~Donato, F., Scortichini, M., Lanki, T., Basagana, X., Ballester, F., Astrom, C., Paldy, A., Pascal, M., Gasparrini, A., et~al. (2018).
+\newblock Synergistic effects of ambient temperature and air pollution on health in europe: results from the phase project.
+\newblock {\em International journal of environmental research and public health}, 15(9):1856.
 
 \bibitem[Ansah and et~al., 2024]{Ansah2024}
 Ansah, E. and et~al. (2024).
-\newblock Health systems response to climate change adaptation: a scoping
-  review of global evidence.
+\newblock Health systems response to climate change adaptation: a scoping review of global evidence.
 \newblock {\em BMC Public Health}, 24(1):2015.
 
 \bibitem[Anselin, 1995]{Anselin1995}
 Anselin, L. (1995).
 \newblock Local indicators of spatial association—lisa.
 \newblock {\em Geographical Analysis}, 27(2):93--115.
+
+\bibitem[Beucler et~al., 2021]{Beucler2021}
+Beucler, T., Pritchard, M., Rasp, S., Ott, J., Baldi, P., and Gentine, P. (2021).
+\newblock Achieving conservation of energy in neural network emulators for climate modeling.
+\newblock {\em Journal of Advances in Modeling Earth Systems}, 13(9):e2021MS002589.
 
 \bibitem[Chersich, 2023]{Chersich2023}
 Chersich, M. (2023).
@@ -43,8 +43,7 @@ Engelbrecht, F. and et~al. (2015).
 \bibitem[{European Space Agency}, 2015]{sentinel2}
 {European Space Agency} (2015).
 \newblock {Sentinel-2 Mission}.
-\newblock
-  \url{https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2}.
+\newblock \url{https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2}.
 \newblock Accessed: 2025-03-30.
 
 \bibitem[Garland and et~al., 2015]{Garland2015}
@@ -53,30 +52,25 @@ Garland, R. and et~al. (2015).
 \newblock {\em Global Health Action}, 7(1):26713.
 
 \bibitem[Gasparrini et~al., 2015]{Gasparrini2015}
-Gasparrini, A., Guo, Y., Hashizume, M., Lavigne, E., Zanobetti, A., Schwartz,
-  J., Tobias, A., Tong, S., Rocklöv, J., Forsberg, B., et~al. (2015).
-\newblock Mortality risk attributable to high and low ambient temperature: a
-  multicountry observational study.
+Gasparrini, A., Guo, Y., Hashizume, M., Lavigne, E., Zanobetti, A., Schwartz, J., Tobias, A., Tong, S., Rocklöv, J., Forsberg, B., et~al. (2015).
+\newblock Mortality risk attributable to high and low ambient temperature: a multicountry observational study.
 \newblock {\em The Lancet}, 386(9991):369--375.
 
 \bibitem[{Gauteng Observatory}, 2021]{gcro_qol_survey}
 {Gauteng Observatory} (2021).
 \newblock {Quality of Life Survey}.
-\newblock
-  \url{https://gcro.ac.za/research/project/detail/quality-of-life-survey}.
+\newblock \url{https://gcro.ac.za/research/project/detail/quality-of-life-survey}.
 \newblock Ward-level data. Accessed: 2025-03-30.
 
 \bibitem[Giombini and Thorn, 2022]{Giombini2022}
 Giombini, V. and Thorn, J.~P. (2022).
-\newblock Urban green spaces in a post-apartheid city: Challenges and
-  opportunities for nature-based solutions.
+\newblock Urban green spaces in a post-apartheid city: Challenges and opportunities for nature-based solutions.
 \newblock pages 207--219.
 
 \bibitem[Harris et~al., 2011]{Harris2011}
 Harris, P., Brunsdon, C., and Charlton, M. (2011).
 \newblock Geographically weighted principal components analysis.
-\newblock {\em International Journal of Geographical Information Science},
-  25:1717--1736.
+\newblock {\em International Journal of Geographical Information Science}, 25:1717--1736.
 
 \bibitem[Hersbach et~al., 2017]{era5}
 Hersbach, H. et~al. (2017).
@@ -86,101 +80,102 @@ Hersbach, H. et~al. (2017).
 
 \bibitem[{Intergovernmental Panel on Climate Change}, 2022]{IPCC2022}
 {Intergovernmental Panel on Climate Change} (2022).
-\newblock Climate change 2022: Impacts, adaptation and vulnerability.
-  contribution of working group ii to the sixth assessment report of the
-  intergovernmental panel on climate change.
+\newblock Climate change 2022: Impacts, adaptation and vulnerability. contribution of working group ii to the sixth assessment report of the intergovernmental panel on climate change.
 
 \bibitem[Jack et~al., 2024]{Jack}
-Jack, C., Parker, C., Kouakou, Y.~E., Joubert, B., McAllister, K.~A., Ilias,
-  M., Maimela, G., Chersich, M., Makhanya, S., Luchters, S., Makanga, P.~T.,
-  Vos, E., Ebi, K.~L., Kon{\'e}, B., Waljee, A.~K., and Ciss{\'e}, G. (2024).
-\newblock Leveraging data science and machine learning for urban climate
-  adaptation in two major african cities: a he2at center study protocol.
+Jack, C., Parker, C., Kouakou, Y.~E., Joubert, B., McAllister, K.~A., Ilias, M., Maimela, G., Chersich, M., Makhanya, S., Luchters, S., Makanga, P.~T., Vos, E., Ebi, K.~L., Kon{\'e}, B., Waljee, A.~K., and Ciss{\'e}, G. (2024).
+\newblock Leveraging data science and machine learning for urban climate adaptation in two major african cities: a he2at center study protocol.
 \newblock {\em BMJ Open}, 14(6).
 
 \bibitem[Khine and Langkulsen, 2023]{Khine2023}
 Khine, M.~M. and Langkulsen, U. (2023).
-\newblock The implications of climate change on health among vulnerable
-  populations in south africa: A systematic review.
-\newblock {\em International Journal of Environmental Research and Public
-  Health}, 20(4):3468.
+\newblock The implications of climate change on health among vulnerable populations in south africa: A systematic review.
+\newblock {\em International Journal of Environmental Research and Public Health}, 20(4):3468.
 
 \bibitem[Khosla et~al., 2021]{Khosla2021}
 Khosla, R., Jani, A., and Perera, R. (2021).
 \newblock Health risks of extreme heat.
 \newblock {\em BMJ}, 375:n2438.
 
+\bibitem[Kinney et~al., 2020]{Kinney2020}
+Kinney, P.~L., Schwartz, J., Pascal, M., Petkova, E., Le~Tertre, A., Medina, S., and Vautard, R. (2020).
+\newblock Climate change, heat, and mortality in the tropical urban area of san juan, puerto rico.
+\newblock {\em International Journal of Environmental Research and Public Health}, 17(11):4037.
+
 \bibitem[Li and et~al., 2017]{Li2017}
 Li, X. and et~al. (2017).
-\newblock The surface urban heat island response to urban expansion: A panel
-  analysis for the conterminous united states.
+\newblock The surface urban heat island response to urban expansion: A panel analysis for the conterminous united states.
 \newblock {\em Science of The Total Environment}, 605-606:426--435.
 
 \bibitem[Murage and et~al., 2020]{Murage2020}
 Murage, P. and et~al. (2020).
-\newblock What factors increase the risk of heat-related mortality? a
-  case-crossover study in london.
+\newblock What factors increase the risk of heat-related mortality? a case-crossover study in london.
 \newblock {\em Environment International}, 134:105292.
 
 \bibitem[Naicker and et~al., 2017]{Naicker2017}
 Naicker, N. and et~al. (2017).
-\newblock Indoor temperatures in low-cost housing in johannesburg, south
-  africa.
-\newblock {\em International Journal of Environmental Research and Public
-  Health}, 14(11):1410.
+\newblock Indoor temperatures in low-cost housing in johannesburg, south africa.
+\newblock {\em International Journal of Environmental Research and Public Health}, 14(11):1410.
 
 \bibitem[Ncongwane et~al., 2021]{Ncongwane2021}
-Ncongwane, K.~P., Botai, J.~O., Sivakumar, V., Botai, C.~M., Adeyemi, A.,
-  Wernecke, B., Mphahlele, M., Khakhau, R.~M., Zwane, N., Chikoore, H., et~al.
-  (2021).
-\newblock A literature review of the impacts of heat stress on human health
-  across africa.
+Ncongwane, K.~P., Botai, J.~O., Sivakumar, V., Botai, C.~M., Adeyemi, A., Wernecke, B., Mphahlele, M., Khakhau, R.~M., Zwane, N., Chikoore, H., et~al. (2021).
+\newblock A literature review of the impacts of heat stress on human health across africa.
 \newblock {\em Sustainability}, 13(9):5312.
+
+\bibitem[Parker et~al., 2023]{Parker2023}
+Parker, C., Chersich, M., Waljee, A., and Jack, C. (2023).
+\newblock Quantifying intra-urban socio-economic and environmental vulnerability to extreme heat events in johannesburg, south africa.
+\newblock {\em Environment International}, 174:107788.
 
 \bibitem[Pasquini et~al., 2020]{Pasquini2020}
 Pasquini, L., van Aardenne, L., Godsmark, C.~N., Lee, J., and Jack, C. (2020).
-\newblock Emerging climate change-related public health challenges in africa: A
-  case study of the heat-health vulnerability of informal settlement residents
-  in dar es salaam, tanzania.
+\newblock Emerging climate change-related public health challenges in africa: A case study of the heat-health vulnerability of informal settlement residents in dar es salaam, tanzania.
 \newblock {\em Science of the Total Environment}, 747:141355.
+
+\bibitem[Roffe et~al., 2023]{Roffe2023}
+Roffe, S.~J., Fitchett, J.~M., Engelbrecht, C.~J., and Engelbrecht, F.~A. (2023).
+\newblock Projected intensification and expansion of heat stress and related heat-attributable mortality in africa under anthropogenic climate change.
+\newblock {\em Earth's Future}, 11(4):e2022EF003338.
+
+\bibitem[Runge et~al., 2019]{Runge2019}
+Runge, J., Bathiany, S., Bollt, E., Camps-Valls, G., Coumou, D., Deyle, E., Glymour, C., Kretschmer, M., Mahecha, M.~D., Muñoz-Marí, J., et~al. (2019).
+\newblock Inferring causation from time series in earth system sciences.
+\newblock {\em Nature Communications}, 10(1):2553.
 
 \bibitem[Santamouris, 2015]{Santamouris2015}
 Santamouris, M. (2015).
-\newblock Analyzing the heat island magnitude and characteristics in one
-  hundred asian and australian cities and regions.
+\newblock Analyzing the heat island magnitude and characteristics in one hundred asian and australian cities and regions.
 \newblock {\em Science of The Total Environment}, 512-513:582--598.
 
 \bibitem[Schwartz et~al., 2022]{Schwartz2022}
-Schwartz, R., Vassilev, A., Greene, K., Perine, L., Burt, A., and Hall, P.
-  (2022).
-\newblock Towards a standard for identifying and managing bias in artificial
-  intelligence.
+Schwartz, R., Vassilev, A., Greene, K., Perine, L., Burt, A., and Hall, P. (2022).
+\newblock Towards a standard for identifying and managing bias in artificial intelligence.
 \newblock {\em NIST Special Publication}, 1270.
 
 \bibitem[Scovronick et~al., 2018]{Scovronick2018}
-Scovronick, N., Sera, F., Acquaotta, F., Garzena, D., Fratianni, S., Wright,
-  C.~Y., and Gasparrini, A. (2018).
-\newblock The association between ambient temperature and mortality in south
-  africa: A time-series analysis.
+Scovronick, N., Sera, F., Acquaotta, F., Garzena, D., Fratianni, S., Wright, C.~Y., and Gasparrini, A. (2018).
+\newblock The association between ambient temperature and mortality in south africa: A time-series analysis.
 \newblock {\em Environmental research}, 161:229--235.
 
 \bibitem[Souverijns et~al., 2022]{Souverijns2022}
 Souverijns, N., De~Ridder, K., and Veldeman, N. (2022).
-\newblock Urban heat in johannesburg and ekurhuleni, south africa: A
-  meter-scale assessment and vulnerability analysis.
+\newblock Urban heat in johannesburg and ekurhuleni, south africa: A meter-scale assessment and vulnerability analysis.
 \newblock {\em Urban Climate}, 46:101331.
 
 \bibitem[Strauss, 2019]{Strauss2019}
 Strauss, M. (2019).
-\newblock A historical exposition of spatial injustice and segregated urban
-  settlement in south africa.
+\newblock A historical exposition of spatial injustice and segregated urban settlement in south africa.
 \newblock {\em Fundamina}, 25(2):135--168.
 
 \bibitem[Strydom, 2016]{Strydom2016}
 Strydom, N. (2016).
-\newblock Johannesburg temperature hits record high as south africa drought
-  persists.
+\newblock Johannesburg temperature hits record high as south africa drought persists.
 \newblock Reuters News Agency.
+
+\bibitem[{The Lancet}, 2024]{Lancet2024}
+{The Lancet} (2024).
+\newblock Climate crisis, cities, and health.
+\newblock {\em The Lancet}, 403(10438):1659--1660.
 
 \bibitem[Tyson and Preston-Whyte, 2000]{Tyson2000}
 Tyson, P. and Preston-Whyte, R. (2000).
@@ -198,22 +193,18 @@ Tyson, P. and Preston-Whyte, R. (2000).
 \newblock Accessed: 2025-03-30.
 
 \bibitem[Venter et~al., 2020]{Venter2020}
-Venter, Z.~S., Shackleton, C.~M., Van~Staden, F., Selomane, O., and Masterson,
-  V.~A. (2020).
-\newblock Green apartheid: Urban green infrastructure remains unequally
-  distributed across income and race geographies in south africa.
+Venter, Z.~S., Shackleton, C.~M., Van~Staden, F., Selomane, O., and Masterson, V.~A. (2020).
+\newblock Green apartheid: Urban green infrastructure remains unequally distributed across income and race geographies in south africa.
 \newblock {\em Landscape and Urban Planning}, 203:103889.
 
 \bibitem[Watts and et~al., 2023]{Watts2023}
 Watts, N. and et~al. (2023).
-\newblock The 2023 report of the lancet countdown on health and climate change:
-  health at the mercy of fossil fuels.
+\newblock The 2023 report of the lancet countdown on health and climate change: health at the mercy of fossil fuels.
 \newblock {\em The Lancet}, 402(10397):1610--1654.
 
 \bibitem[Wichmann, 2017]{Wichmann2017}
 Wichmann, J. (2017).
-\newblock Heat effects of ambient apparent temperature on all-cause mortality
-  in cape town, durban and johannesburg, south africa: 2006-2010.
+\newblock Heat effects of ambient apparent temperature on all-cause mortality in cape town, durban and johannesburg, south africa: 2006-2010.
 \newblock {\em Science of the Total Environment}, 587:266--272.
 
 \bibitem[{World Bank Cities Support Program}, 2024]{WorldBank2024}
@@ -223,22 +214,16 @@ Wichmann, J. (2017).
 
 \bibitem[Worldometer, 2023]{Worldometer2023}
 Worldometer (2023).
-\newblock World population by country.
-\newblock Retrieved from
-  \url{https://www.worldometers.info/world-population/population-by-country/}.
+\newblock Johannesburg south africa population.
+\newblock Retrieved from: https://www.worldometers.info/world-population/.
 
 \bibitem[Wright et~al., 2019]{Wright2019}
-Wright, C.~Y., Dominick, F., Kapwata, T., Bidassey-Manilal, S., Engelbrecht,
-  J.~C., Reddy, P., Olwoch, J.~M., Garland, R.~M., Matooane, M., Wernecke, B.,
-  et~al. (2019).
-\newblock Socio-economic, infrastructural and health-related risk factors
-  associated with adverse heat-health effects reportedly experienced during hot
-  weather in south africa.
+Wright, C.~Y., Dominick, F., Kapwata, T., Bidassey-Manilal, S., Engelbrecht, J.~C., Reddy, P., Olwoch, J.~M., Garland, R.~M., Matooane, M., Wernecke, B., et~al. (2019).
+\newblock Socio-economic, infrastructural and health-related risk factors associated with adverse heat-health effects reportedly experienced during hot weather in south africa.
 \newblock {\em Pan African Medical Journal}, 34.
 
 \bibitem[Wright et~al., 2021]{Wright2021}
-Wright, C.~Y., Kapwata, T., Wernecke, B., Garland, R.~M., Nkosi, V., Abramson,
-  M.~J., Mathee, A., Kunene, Z., Balakrishna, Y., and Chersich, M.~F. (2021).
+Wright, C.~Y., Kapwata, T., Wernecke, B., Garland, R.~M., Nkosi, V., Abramson, M.~J., Mathee, A., Kunene, Z., Balakrishna, Y., and Chersich, M.~F. (2021).
 \newblock Major climate change-induced risks to human health in south africa.
 \newblock {\em Environmental Research}, 196:110973.
 
