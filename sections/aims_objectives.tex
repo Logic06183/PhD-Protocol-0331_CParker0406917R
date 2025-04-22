@@ -2,57 +2,54 @@
 % Load graphicx package in preamble if not already loaded
 \graphicspath{{./images/}}
 
-\subsection{Primary Aim}
-This research aims to deepen our understanding of spatially and demographically stratified heat-health interactions in Johannesburg, developing evidence-based approaches to mitigate health risks from rising urban temperatures. By examining the complex interplay between urban heat, socioeconomic factors, and health outcomes, this project seeks to bridge critical knowledge gaps in urban climate-health research within the African context, with potential applications for similar urban environments globally.
+\subsection{Primary Research Question}
+This study addresses the following primary research question: \textit{How do urban form, socio-demographic characteristics, and climate factors interact to shape heat vulnerability and health outcomes in Johannesburg, and what interventions could effectively reduce heat-related health impacts?}
 
-\subsection{Specific Objectives}
-This research is structured around three interconnected objectives that progress from descriptive analysis to explanatory insights and ultimately to predictive capabilities:
+Specific sub-questions include: (1) spatial distribution of heat vulnerabilities; (2) mediating factors in heat-health relationships; (3) effectiveness of current adaptation strategies; and (4) optimal infrastructural and policy interventions.
 
-\subsubsection{Objective 1: Intra-urban Heat Vulnerability Mapping}
-The first objective centres on comprehensive spatial vulnerability assessment to identify patterns of heat risk across Johannesburg's diverse urban landscape. This mapping process will examine how historical urban development patterns, particularly those influenced by apartheid-era planning, continue to shape contemporary heat vulnerability. Through this assessment, we will identify priority intervention areas and quantify multidimensional vulnerability patterns with particular emphasis on socio-spatial inequities. This objective will result in detailed vulnerability characterization that can directly inform targeted urban planning and public health interventions.
+\subsection{Objectives}
+This research is structured around three interconnected objectives:
 
-\subsubsection{Objective 2: Heat-Health Dynamics Exploration}
-Building on the vulnerability assessment, the second objective aims to unravel complex heat-health relationships by investigating the underlying physiological mechanisms through which heat exposure affects human health. Through a two-stage modelling approach, we will first generate hypotheses about key physiological pathways and then systematically test these hypotheses using targeted feature engineering. This component will focus particularly on metabolic, renal, and inflammatory responses to heat stress, examining how these systems interact across multiple temporal scales. 
+\subsubsection{Objective 1: Geographically Weighted Heat Vulnerability Mapping}
+Develop comprehensive spatial vulnerability assessment using geographically weighted approaches that account for spatial non-stationarity. This will identify patterns of heat risk across Johannesburg's diverse urban landscape, examine how historical development patterns shape contemporary vulnerability, and identify priority intervention areas with particular emphasis on infrastructural and socio-spatial inequities.
 
-The research will explore non-linear climate-health interactions across different temperature thresholds while distinguishing between immediate (0-24 hours), short-term (1-7 days), and medium-term (7-30 days) physiological effects. By applying interpretable machine learning techniques with clinically validated pathway diagrams, we seek to establish causal mechanisms that explain differential vulnerability between population groups and identify critical intervention points for health protection during heat events. This explanatory approach moves beyond simple statistical associations to provide mechanistic insights to inform targeted clinical and public health responses.
+\subsubsection{Objective 2: Causal Mechanisms of Heat-Health Relationships}
+Identify causal mechanisms underlying observed patterns of heat vulnerability through advanced explanatory modeling. This involves investigating which biological systems are most affected by heat stress, how these impacts vary across demographic groups, and what socioeconomic factors mediate these effects.
 
-\subsubsection{Objective 3: Stratified Heat-Health Prediction Modeling}
-The final objective leverages insights from the previous components to develop predictive frameworks for heat-related health outcomes in Johannesburg. These predictive capabilities will be stratified both geographically and demographically to account for differential vulnerability across the city's diverse population. The objective seeks to identify specific risk conditions at various temperature thresholds, enabling the development of targeted early warning systems. Special attention will be given to demographic-specific risk stratification for vulnerable populations, including the elderly, those with pre-existing conditions, and communities with limited adaptive capacity. The resulting predictive tools will provide actionable intelligence for healthcare systems and emergency response planning.
+\subsubsection{Objective 3: Predictive Modeling for Early Warning Systems}
+Develop predictive models incorporating near-real-time environmental data, meteorological forecasts, and vulnerability factors to predict heat-health risks. This includes identifying critical temperature thresholds and neighborhood-specific warning indicators to support short-term emergency response and longer-term adaptation planning.
 
 \begin{figure}[h]
     \centering
-    % Adding a white background rectangle to prevent text showing through
-    \begin{tikzpicture}[
-        block/.style={rectangle, draw, rounded corners=3pt, text width=14em, text centered, minimum height=2.5em, font=\bfseries, fill=gray!15, draw=black!70},
-        objective/.style={rectangle, draw, text width=14em, text centered, minimum height=2.5em, draw=black!70},
-        arrow/.style={thick,->,>=stealth, draw=black!70},
-        label/.style={rectangle, draw, rounded corners=3pt, fill=white, text width=6em, text centered, minimum height=1.8em, draw=black!30}
+    \begin{tikzpicture}[node distance=2cm, auto, 
+        block/.style={rectangle, draw, fill=blue!20, text width=5cm, text centered, rounded corners, minimum height=1cm},
+        arrow/.style={draw, thick, -latex},
+        label/.style={rectangle, draw=none, fill=none, text width=2cm, text centered}
     ]
+    % Nodes
+    \node[block] (aim) {\textbf{Primary Aim}\\Deepen understanding of heat-health interactions in Johannesburg and develop evidence-based mitigation approaches};
+    \node[block, below of=aim, node distance=2cm] (obj1) {\textbf{Objective 1}\\Geographically weighted heat vulnerability mapping};
+    \node[block, below of=obj1, node distance=2cm] (obj2) {\textbf{Objective 2}\\Causal mechanisms of heat-health relationships};
+    \node[block, below of=obj2, node distance=2cm] (obj3) {\textbf{Objective 3}\\Predictive modeling for early warning systems};
+    \node[block, below of=obj3, node distance=2cm] (obj4) {\textbf{Objective 4}\\Policy translation and intervention development};
     
-    % Add background rectangle to prevent text showing through
-    \fill[white] (-1,-6.5) rectangle (9,0.5);
-    
-    % Primary Aim block with darker fill
-    \node[block, fill=gray!25] (aim) at (0,0) {Primary Aim:\\Urban Heat-Health Interactions};
-    
-    % Objectives with distinctive styling
-    \node[objective, fill=white] (obj1) at (0,-2) {Objective 1:\\Vulnerability Mapping};
-    \node[objective, fill=white] (obj2) at (0,-4) {Objective 2:\\Heat-Health Dynamics};
-    \node[objective, fill=white] (obj3) at (0,-6) {Objective 3:\\Predictive Model Development};
-    
-    % Arrows with slight curve for visual interest
+    % Arrows connecting nodes
     \draw[arrow, -latex] (aim) -- (obj1);
     \draw[arrow, -latex] (obj1) -- (obj2);
     \draw[arrow, -latex] (obj2) -- (obj3);
+    \draw[arrow, -latex] (obj3) -- (obj4);
     
     % Labels with better positioning and styling
     \node[label] at (7,-2) {Descriptive};
     \node[label] at (7,-4) {Explanatory};
     \node[label] at (7,-6) {Predictive};
+    \node[label] at (7,-8) {Implementation};
     
     \end{tikzpicture}
-    \caption{Hierarchical framework of research objectives showing progression from descriptive to predictive approaches.}
-    \label{fig:aims_objectives}
+    \caption{Hierarchical framework of research objectives showing progression from descriptive to implementation approaches.}
+    \label{fig:framework}
 \end{figure}
 
-Together, these three objectives form an integrated research framework that addresses the spatial dimension (identifying vulnerable areas), the physiological dimension (understanding underlying mechanisms), and the temporal dimension (developing predictive capabilities). This multi-dimensional approach will provide a comprehensive understanding of heat-health interactions in Johannesburg, with implications for urban planning, public health interventions, and climate adaptation strategies. The research design intentionally builds each objective upon the findings of the previous one, creating a cohesive analytical pathway from vulnerability characterization to mechanistic understanding to practical solution development. This progression from descriptive to explanatory to predictive aims reflects the holistic nature of the heat-health challenge and enables development of targeted, evidence-based interventions.
+
+
+These four objectives form an integrated research framework addressing spatial, physiological, temporal, and policy dimensions of heat vulnerability. The research design builds each objective upon the findings of the previous one, creating a cohesive pathway from vulnerability characterization to mechanistic understanding to practical solution development.

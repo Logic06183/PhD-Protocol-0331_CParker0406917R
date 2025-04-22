@@ -1,20 +1,22 @@
 \section{Methodology}
 
-\subsection{Study Design and Setting}
-This research employs a multi-method approach integrating geospatial analysis, statistical modelling, and machine learning to investigate heat-health relationships in Johannesburg, South Africa. Johannesburg presents an ideal study setting due to its subtropical highland climate, significant socioeconomic disparities, pronounced Urban Heat Island effects, diverse urban morphology, and high prevalence of both communicable diseases and non-communicable conditions that may interact with heat vulnerability patterns.
+\subsection{Study Design}
+This study employs a mixed-methods design integrating quantitative geospatial analysis with qualitative community-engaged research across four phases:
+\begin{enumerate}
+    \item \textbf{Vulnerability Mapping} - Developing geographically weighted heat vulnerability indices
+    \item \textbf{Causal Analysis} - Identifying key causal pathways and mechanisms
+    \item \textbf{Intervention Assessment} - Evaluating effectiveness of existing interventions
+    \item \textbf{Policy Translation} - Developing evidence-based policy recommendations
+\end{enumerate}
 
 \subsection{Data Sources and Collection}
 Health data spanning 2000--2022 will be drawn from clinical trials and cohort studies conducted in Johannesburg that meet defined inclusion criteria: cohorts or trials with 200 adult participants, prospectively collected data, comprehensive clinical and laboratory variables, and appropriate ethics approvals. The dataset will include clinical indicators and laboratory tests covering renal, metabolic and inflammatory markers and demographic/socioeconomic factors. Given potential confounding effects, 2020--2022 data will undergo stratified analysis to account for pandemic-related influences on healthcare utilization and outcomes. A comprehensive overview of all data sources is provided in Appendix Table 1.
 
-
 \subsubsection{Environmental and Socioeconomic Data}
 Environmental parameters will be derived from multiple validated sources, including Landsat 8 \citep{landsat8}, Sentinel-2 \citep{sentinel2}, ERA5 reanalysis \citep{era5}, and the Copernicus Climate Data Store \citep{copernicus_climate_data_store}. These data streams will provide high-resolution measurements of Land Surface Temperature, vegetation indices, air temperature, and derived heat metrics. Socioeconomic determinants will be incorporated through ward-level data from the Gauteng City-Region Observatory Quality of Life Surveys \citep{gcro_qol_survey}, capturing housing quality, infrastructure adequacy, and healthcare access. The data processing and integration workflow is detailed in Appendix Table 2, with specific security measures outlined in Appendix Table 3.
 
-\subsubsection{Limitations of Data Sources}
-While the Gauteng City-Regional Observatory (GCRO) Quality of Life Surveys provide comprehensive socioeconomic indicators, they have notable limitations including temporal gaps between survey waves, varying sample sizes across wards, and potential response biases in informal settlements. These data were selected due to their unparalleled ward-level resolution and longitudinal consistency compared to alternatives such as census data (which lacks recency) or satellite-derived proxies (which lack socioeconomic depth). To mitigate these limitations, we will implement three strategies: (1) temporal harmonization through interpolation techniques for missing years, (2) confidence-weighted analysis based on ward-level sample sizes, and (3) triangulation with alternative data sources where available.
-
-\subsubsection{COVID-19 Considerations}
-To account for COVID-19's potential confounding effects on health systems and data quality during 2020-2022, we will employ a multi-faceted approach. First, interrupted time series analysis will quantify pandemic-related discontinuities in healthcare utilization patterns. Second, stratified analysis will separately examine pre-pandemic, pandemic, and post-pandemic periods to identify divergent heat-health relationships. Third, sensitivity analyses will test model stability with and without pandemic-period data. This approach allows us to isolate pandemic effects while maintaining analytical integrity across the full study period, addressing potential biases in both environmental exposure assessment and health outcome recording during this anomalous period.
+\subsubsection{Health and Socioeconomic Data}
+We will integrate: daily mortality records and hospital admission data (with focus on cardiovascular, respiratory, and heat-specific diagnoses), demographic variables from Statistics South Africa, social vulnerability indicators (housing quality, utility access), pre-existing health condition prevalence, and COVID-19 data to assess potential interactive effects with heat vulnerability. All datasets will be harmonized to comparable spatial units for integrated analysis.
 
 \subsubsection{Sample Size Justification}
 The study's statistical power is ensured through comprehensive data coverage and adequate sample sizes. For vulnerability mapping, data from all 135 wards provide complete spatial coverage. For the explanatory and predictive modelling components, the combined dataset of approximately 5,000--7,000 records substantially exceeds the minimum requirement of 10-20 observations per predictive feature (with 20-25 features anticipated). This sample size provides >80\% power to detect clinically meaningful effects, calculated as:
@@ -25,57 +27,25 @@ n = \frac{2(Z_{\alpha/2} + Z_{\beta})^2\sigma^2}{\Delta^2}
 
 where $Z_{\alpha/2}$ and $Z_{\beta}$ are standard normal deviates for type I and II errors, $\sigma^2$ is the expected variance, and $\Delta$ is the minimal detectable effect size.
 
+\subsection{Analytical Approaches}
+
+\subsubsection{Geographically Weighted Vulnerability Mapping}\label{gwpca}
+A key innovation in this study is the application of Geographically Weighted Principal Component Analysis (GWPCA), which accounts for spatially heterogeneous relationships between vulnerability indicators \citep{Quispe2023, Praharaj2024}. This is crucial in Johannesburg given its extreme socio-spatial fragmentation. The GWPCA approach includes: (1) indicator selection across exposure, sensitivity, and adaptive capacity domains; (2) spatial bandwidth optimization through cross-validation; (3) local component extraction allowing vulnerability factors to vary spatially; (4) construction of location-specific vulnerability indices; (5) spatial mapping; and (6) comparative analysis between global and local statistical approaches. Implementation will utilize the GWmodel package in R.
+
+\subsubsection{Causal Machine Learning Approaches}
+To move beyond correlation and identify causal mechanisms linking urban form, socioeconomic conditions, and heat-health outcomes, we will employ: (1) causal structure learning using the PC algorithm to discover potential causal relationships; (2) causal effect estimation using double machine learning and causal forests to estimate heterogeneous treatment effects of specific urban features; and (3) causal mediation analysis to quantify direct and indirect pathways through which urban characteristics influence health outcomes. Implementation will use causal-learn and econml Python packages, with sensitivity analyses to assess robustness.
+
 \subsection{Objective 1: Vulnerability Mapping}
-Geospatial data will undergo rigorous preprocessing, including normalization, completeness assessments, and spatial harmonization. The methodology employs Geographically Weighted Principal Component Analysis (GWPCA) \citep{Harris2011, Quispe2023} to develop a comprehensive Heat Vulnerability Index that accounts for spatial non-stationarity in vulnerability relationships. Recent applications of GWPCA in urban heat vulnerability mapping have demonstrated its superiority over global PCA approaches, particularly in capturing local variations in socio-spatial patterns that are critical for targeted interventions \citep{Quispe2023, Praharaj2024}. The local GW-PCA model at location $i$ can be formulated as:
-
-\begin{equation}
-X_i = V_i\Lambda_iV^T_i + \varepsilon_i
-\end{equation}
-
-where $X_i$ represents the local data matrix, $V_i$ contains the local eigenvectors, $\Lambda_i$ is the diagonal matrix of local eigenvalues, and $\varepsilon_i$ is the error term.
-
-Spatial clustering analysis using Local Indicators of Spatial Association will identify significant (p<0.05) vulnerability hot spots and outliers \citep{Anselin1995}. The local Moran's I statistic will be calculated as:
-
-\begin{equation}
-I_i = z_i \sum_{j} w_{ij}z_j
-\end{equation}
-
-where $ z_i$ and $ z_j$ are the standardized values of the vulnerability index, and $ w_ij$ represents the spatial weight between locations $ i$ and $ j$. Given the sensitive nature of location data, geographic de-identification techniques outlined in Appendix Table 4 will be employed to protect privacy while maintaining analytical validity.
-
-\subsubsection{Mixed Socioeconomic Areas}
-To accurately identify areas with mixed socioeconomic classes, particularly relevant in Johannesburg's complex urban landscape, we will employ multi-scale analysis techniques that account for within-ward heterogeneity. Recent research on Johannesburg's heat vulnerability \citep{Parker2023} demonstrates that ward-level aggregation can mask significant internal variations in both environmental exposure and socioeconomic conditions. Our methodology addresses this through: (1) sub-ward disaggregation using high-resolution (30m) satellite data to identify microscale heat exposure patterns; (2) socioeconomic inequality indices calculated at multiple spatial scales; and (3) local indicators of spatial association to detect statistically significant socioeconomic clustering patterns within larger administrative units. This approach allows detection of vulnerable pockets within otherwise affluent areas and resilient communities within generally vulnerable regions.
+Geospatial data will undergo rigorous preprocessing, including normalization, completeness assessments, and spatial harmonization. The methodology employs Geographically Weighted Principal Component Analysis (GWPCA) \citep{Harris2011, Quispe2023} to develop a comprehensive Heat Vulnerability Index that accounts for spatial non-stationarity in vulnerability relationships.
 
 \subsection{Objective 2: Explanatory Modeling}
 The explanatory modelling framework employs a two-stage clinical-computational approach examining both physiological pathways and temporal effects of heat exposure. This framework harmonizes data from multiple cohort studies to investigate underlying mechanisms across different physiological systems.
 
 \subsubsection{Clinical Pathway Validation}
-Working with clinical experts, we will develop comprehensive physiological pathway diagrams representing hypothesized heat-health mechanisms at multiple biological levels. These diagrams will be rigorously validated through expert consensus panels and systematic literature review, establishing physiologically plausible causal pathways before computational analysis. This clinical foundation ensures that subsequent machine learning insights remain grounded in biological reality while allowing for novel relationship discovery.
+Working with clinical experts, we will develop comprehensive physiological pathway diagrams representing hypothesized heat-health mechanisms at multiple biological levels. These diagrams will be rigorously validated through expert consensus panels and systematic literature review, establishing physiologically plausible causal pathways before computational analysis.
 
-\subsubsection{Multi-System Physiological Analysis}
-Physiologically, the analysis will systematically investigate how heat stress affects renal function through creatinine, electrolytes, and GFR measurements; metabolic pathways including glucose dysregulation, insulin sensitivity changes, and mitochondrial function; and inflammatory responses through markers such as CRP, IL-6, and other cytokine profiles \citep{Desai2023}. Of particular focus will be the metabolic stress pathway through which heat exposure influences glucose metabolism and overall metabolic health. Appendix F.7 (Metabolic Pathway Analysis) provides visualisations of these pathways.
-
-\subsubsection{Two-Stage Modeling Approach}
-Our analytical strategy follows a structured two-stage process that begins with hypothesis generation and concludes with targeted hypothesis testing. In the initial hypothesis generation stage, we will apply interpretable machine learning techniques to identify potential heat-health relationships without imposing strong a priori assumptions \citep{Schwartz2022}. This first stage employs Random Forest models with permutation importance metrics to identify key predictive factors, XGBoost models with SHAP (SHapley Additive exPlanations) values to quantify feature contributions and interactions, and LIME (Local Interpretable Model-agnostic Explanations) to decompose predictions for individual cases. The SHAP value for feature $j$ is defined as:
-
-\begin{equation}
-\phi_j = \sum_{S \subseteq N \setminus \{j\}} \frac{|S|!(|N|-|S|-1)!}{|N|!}[f_x(S \cup \{j\}) - f_x(S)]
-\end{equation}
-
-\noindent where $N$ is the set of all features, $S$ is a subset of features, $f_x(S)$ is the model prediction for feature set $S$, and the summation is over all possible feature subsets.
-
-The second stage focuses on hypothesis testing through targeted feature engineering. Based on insights from clinical pathways and initial model interpretations, we will develop composite variables representing specific physiological mechanisms such as cumulative heat stress indices, dehydration risk scores, and inflammatory burden metrics. Additional engineered features will include integrated heat-humidity stress indices capturing physiological strain, time-weighted exposure variables reflecting adaptation mechanisms, interaction terms between existing comorbidities and heat metrics, and system-specific vulnerability scores derived from multiple biomarkers. These engineered features will be tested in subsequent models to evaluate their physiological relevance and predictive power, creating an iterative feedback loop between clinical understanding and data-driven discovery.
-
-\subsubsection{Validation Framework}
-The hypothesized relationships and mechanisms identified through this process will undergo formal validation through multiple complementary approaches. We will employ K-fold cross-validation stratified by demographic and clinical subgroups to assess model stability across different populations. Confidence intervals will be established through bootstrapping with 1,000 resamples, while sensitivity analyses across varying model parameters and threshold definitions will test the robustness of modelling assumptions. Permutation testing will help distinguish true effects from chance correlations, and distributed lag modelling will validate temporal relationships. This comprehensive validation framework ensures findings reflect genuine heat-health relationships rather than statistical artefacts. Notably, the final DLNM models serve as a rigorous statistical validation of the mechanistic hypotheses generated through the interpretable machine learning and feature engineering process\citep{Gasparrini2015}.
-
-This iterative clinical-computational approach explicitly incorporates expert knowledge into the machine learning pipeline while allowing the data to reveal relationships that may confirm, refine, or contradict clinically-derived hypotheses. The resulting insights will establish a foundation for targeted interventions based on validated physiological mechanisms rather than purely statistical associations.
-
-\subsubsection{Causal Machine Learning Approaches}
-To enhance the explanatory power of our models and address the limitation of conventional predictive approaches, we will incorporate causal machine learning methods that go beyond correlative relationships to identify potential causal mechanisms. Following approaches developed by \citet{Runge2019}, we will employ causal discovery algorithms to remove spurious links in our predictive models, focusing on "climate invariant" causal drivers that remain robust across different temperature regimes \citep{Beucler2021}. This methodology allows for more reliable identification of intervention points by distinguishing between direct causal effects and mere statistical associations.
-
-Recent advances in causal machine learning for environmental justice applications provide methodological precedents for this approach \citep{Velasquez2023}. Specifically, we will implement three causal learning approaches: (1) causal structure learning using PC algorithm and conditional independence tests to construct directed acyclic graphs of heat-health relationships; (2) causal effect estimation techniques including doubly robust estimation and targeted maximum likelihood estimation to quantify the magnitude of causal impacts; and (3) causal mediation analysis to identify pathways through which heat exposure influences health outcomes. 
-
-This causal framework addresses methodological limitations identified in the latest IPCC assessment \citep{IPCC2024}, which highlights the need for causal attribution methods that can disentangle climate change impacts from socioeconomic drivers of vulnerability. The approach will be particularly valuable for distinguishing between factors that mediate heat vulnerability (potential intervention targets) versus those that merely indicate vulnerability (monitoring targets), informing more effective climate adaptation strategies targeted at underlying causal mechanisms rather than symptomatic correlations.
+\subsubsection{Temporal Heat Exposure Modeling}
+To capture the dynamic nature of heat exposure, we will develop spatiotemporal models that characterize: (1) diurnal patterns of day-night temperature variations; (2) seasonal variations between summer and winter; (3) extreme heat events and their spatiotemporal distributions; and (4) long-term trends under climate change scenarios. These analyses will employ time series modeling, extreme value theory, and climate downscaling approaches.
 
 \subsection{Objective 3: Predictive Modeling}
 The predictive framework integrates environmental, socioeconomic, and health data to forecast heat-related health outcomes within a 24--72 hour horizon. The methodology employs advanced feature engineering combining domain knowledge with statistical selection techniques including mutual information analysis and recursive feature elimination with cross-validation to identify optimal predictive variables while controlling for collinearity.

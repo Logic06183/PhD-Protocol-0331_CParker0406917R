@@ -412,6 +412,11 @@ INPUT ./sections/aims_objectives.tex
 INPUT ./sections/aims_objectives.tex
 INPUT ./sections/aims_objectives.tex
 INPUT sections/aims_objectives.tex
+INPUT ./sections/images/GANTT.png
+INPUT ./sections/images/GANTT.png
+INPUT ./sections/images/GANTT.png
+INPUT ./sections/images/GANTT.png
+INPUT ./sections/images/GANTT.png
 INPUT ./sections/methodology.tex
 INPUT ./sections/methodology.tex
 INPUT ./sections/methodology.tex
@@ -459,7 +464,6 @@ INPUT ./sections/timeline.tex
 INPUT ./sections/timeline.tex
 INPUT ./sections/timeline.tex
 INPUT sections/timeline.tex
-INPUT ./sections/images/GANTT.png
 INPUT ./sections/images/GANTT.png
 INPUT ./sections/images/GANTT.png
 INPUT ./sections/images/GANTT.png
