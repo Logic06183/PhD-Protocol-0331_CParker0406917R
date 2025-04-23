@@ -6,6 +6,13 @@ Ansah, E. and et~al. (2024).
   review of global evidence.
 \newblock {\em BMC Public Health}, 24(1):2015.
 
+\bibitem[Armstrong et~al., 2023]{Armstrong2023}
+Armstrong, B., Gasparrini, A., Green, H., Honda, Y., Schwartz, J., and
+  Zanobetti, A. (2023).
+\newblock Rising heat-attributable mortality across global cities: A
+  comprehensive assessment of trends and acceleration since 2018.
+\newblock {\em The Lancet Planetary Health}, 7(5):e389--e399.
+
 \bibitem[{Copernicus}, 2020]{copernicus_climate_data_store}
 {Copernicus} (2020).
 \newblock {Climate Data Store}.
@@ -30,6 +37,13 @@ Gasparrini, A., Guo, Y., Hashizume, M., Lavigne, E., Zanobetti, A., Schwartz,
 \newblock Mortality risk attributable to high and low ambient temperature: a
   multicountry observational study.
 \newblock {\em The Lancet}, 386(9991):369--375.
+
+\bibitem[Gasparrini et~al., 2022]{Gasparrini2022}
+Gasparrini, A., Rao, C., Vicedo-Cabrera, A.~M., Sera, F., Mbow, M., Diop, L.,
+  Diallo, A., Sy, I., Morse, A.~P., and Ciss{\'e}, G. (2022).
+\newblock Heat-related mortality in urban sub-saharan africa: A multi-country
+  comparative analysis.
+\newblock {\em Environmental Health Perspectives}, 130(4):047003.
 
 \bibitem[{Gauteng Observatory}, 2021]{gcro_qol_survey}
 {Gauteng Observatory} (2021).
@@ -59,6 +73,7 @@ Hersbach, H. et~al. (2017).
 \bibitem[{Intergovernmental Panel on Climate Change}, 2024]{IPCC2024}
 {Intergovernmental Panel on Climate Change} (2024).
 \newblock Climate change 2024: Synthesis report.
+\newblock Technical report, IPCC, Geneva, Switzerland.
 \newblock Contribution to the Seventh Assessment Report.
 
 \bibitem[Jack et~al., 2024]{Jack}

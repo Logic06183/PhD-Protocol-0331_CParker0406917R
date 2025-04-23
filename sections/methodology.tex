@@ -1,22 +1,27 @@
 \section{Methodology}
 
 \subsection{Study Design}
-This study employs a mixed-methods design integrating quantitative geospatial analysis with qualitative community-engaged research across four phases:
+This study employs a mixed-methods design integrating quantitative geospatial analysis with qualitative community-engaged research across three primary phases:
 \begin{enumerate}
     \item \textbf{Vulnerability Mapping} - Developing geographically weighted heat vulnerability indices
     \item \textbf{Causal Analysis} - Identifying key causal pathways and mechanisms
-    \item \textbf{Intervention Assessment} - Evaluating effectiveness of existing interventions
-    \item \textbf{Policy Translation} - Developing evidence-based policy recommendations
+    \item \textbf{Predictive Modeling} - Developing heat-health forecasting capabilities
 \end{enumerate}
 
+While the findings from these three phases will generate insights that could inform future intervention strategies and policy recommendations, the actual development and implementation of such interventions falls outside the scope of this PhD project.
+
 \subsection{Data Sources and Collection}
-Health data spanning 2000--2022 will be drawn from clinical trials and cohort studies conducted in Johannesburg that meet defined inclusion criteria: cohorts or trials with 200 adult participants, prospectively collected data, comprehensive clinical and laboratory variables, and appropriate ethics approvals. The dataset will include clinical indicators and laboratory tests covering renal, metabolic and inflammatory markers and demographic/socioeconomic factors. Given potential confounding effects, 2020--2022 data will undergo stratified analysis to account for pandemic-related influences on healthcare utilization and outcomes. A comprehensive overview of all data sources is provided in Appendix Table 1.
+Health data spanning 2000--2022 will be drawn from clinical trials and cohort studies conducted in Johannesburg that meet defined inclusion criteria: cohorts or trials with 200 adult participants, prospectively collected data, comprehensive clinical and laboratory variables, and appropriate ethics approvals. The dataset will include clinical indicators and laboratory tests covering renal, metabolic and inflammatory markers and demographic/socioeconomic factors. 
+
+To address the significant impact of COVID-19 on both healthcare utilization patterns and population vulnerability, 2020--2022 data will undergo specialized analytical treatment, including: (1) stratified analysis by pandemic periods (pre-pandemic, peak waves, inter-wave periods); (2) adjustment for documented disruptions in healthcare-seeking behavior; and (3) incorporation of COVID-19 case and mortality data as potential confounding or effect-modifying variables. Changes in vulnerability patterns during this period will be explicitly modeled to understand how the pandemic may have altered underlying vulnerability dynamics. A comprehensive overview of all data sources is provided in Appendix Table 1.
 
 \subsubsection{Environmental and Socioeconomic Data}
 Environmental parameters will be derived from multiple validated sources, including Landsat 8 \citep{landsat8}, Sentinel-2 \citep{sentinel2}, ERA5 reanalysis \citep{era5}, and the Copernicus Climate Data Store \citep{copernicus_climate_data_store}. These data streams will provide high-resolution measurements of Land Surface Temperature, vegetation indices, air temperature, and derived heat metrics. Socioeconomic determinants will be incorporated through ward-level data from the Gauteng City-Region Observatory Quality of Life Surveys \citep{gcro_qol_survey}, capturing housing quality, infrastructure adequacy, and healthcare access. The data processing and integration workflow is detailed in Appendix Table 2, with specific security measures outlined in Appendix Table 3.
 
 \subsubsection{Health and Socioeconomic Data}
-We will integrate: daily mortality records and hospital admission data (with focus on cardiovascular, respiratory, and heat-specific diagnoses), demographic variables from Statistics South Africa, social vulnerability indicators (housing quality, utility access), pre-existing health condition prevalence, and COVID-19 data to assess potential interactive effects with heat vulnerability. All datasets will be harmonized to comparable spatial units for integrated analysis.
+We will integrate: daily mortality records and hospital admission data (with focus on cardiovascular, respiratory, and heat-specific diagnoses), demographic variables from Statistics South Africa, social vulnerability indicators (housing quality, utility access), pre-existing health condition prevalence, and COVID-19 data to assess potential interactive effects with heat vulnerability. 
+
+A key methodological challenge is capturing vulnerability in Johannesburg's mixed socioeconomic areas where informal settlements often exist adjacent to middle and high-income neighborhoods. To address this, we will implement: (1) sub-ward level analysis where data resolution permits; (2) heterogeneity analysis within administrative units using variance metrics; and (3) mixed-effects models that explicitly account for within-ward socioeconomic variation. This approach will enable identification of vulnerable populations that might otherwise be masked by ward-level aggregation in socioeconomically heterogeneous areas. All datasets will be harmonized to comparable spatial units for integrated analysis, with explicit documentation of data quality metrics for each source.
 
 \subsubsection{Sample Size Justification}
 The study's statistical power is ensured through comprehensive data coverage and adequate sample sizes. For vulnerability mapping, data from all 135 wards provide complete spatial coverage. For the explanatory and predictive modelling components, the combined dataset of approximately 5,000--7,000 records substantially exceeds the minimum requirement of 10-20 observations per predictive feature (with 20-25 features anticipated). This sample size provides >80\% power to detect clinically meaningful effects, calculated as:
@@ -61,7 +66,24 @@ where $l$ is the loss function comparing the prediction $\hat{y}_i$ with the tar
 The validation strategy employs forward-chaining time-series cross-validation to realistically simulate forecasting scenarios, with performance evaluated using metrics including area under the receiver operating characteristic curve (AUC-ROC):
 
 \subsubsection{Model Accuracy and Reliability Measures}
-To ensure predictive model accuracy and reliability, particularly across Johannesburg's diverse urban contexts, we will implement a comprehensive validation framework. This includes: (1) spatially stratified cross-validation to test model performance across different urban morphologies; (2) out-of-distribution detection methods to identify and address anomalous predictions; (3) uncertainty quantification through conformal prediction intervals; and (4) regular recalibration procedures to maintain model accuracy over time. Our model evaluation will employ metrics beyond traditional accuracy measures (AUC-ROC, F1) to include reliability diagrams, expected calibration error, and variable-specific sensitivity analyses. This approach ensures that predictions remain valid across the city's diverse built environments and socioeconomic contexts, with explicit reliability assessments for informal settlements and areas undergoing rapid urban transformation.
+To ensure predictive model accuracy and reliability, particularly across Johannesburg's diverse urban contexts, we will implement a comprehensive validation framework. This includes: (1) spatially stratified cross-validation to test model performance across different urban morphologies; (2) out-of-distribution detection methods to identify and address anomalous predictions; (3) uncertainty quantification through conformal prediction intervals; and (4) regular recalibration procedures to maintain model accuracy over time. 
+
+Our model evaluation will employ metrics beyond traditional accuracy measures (AUC-ROC, F1) to include reliability diagrams, expected calibration error, and variable-specific sensitivity analyses. This approach ensures that predictions remain valid across the city's diverse built environments and socioeconomic contexts, with explicit reliability assessments for informal settlements and areas undergoing rapid urban transformation.
+
+\subsubsection{Data Quality Variability Management}
+A critical challenge in urban vulnerability modeling is the heterogeneous quality of data across sources and locations. To address this issue comprehensively, we will implement:
+
+\begin{enumerate}
+    \item \textbf{Quality-weighted modeling}: All data sources will be assigned quality scores based on completeness, consistency with reference sources, and temporal coverage. These scores will be incorporated into model weights, reducing the influence of lower-quality data on final predictions.
+    
+    \item \textbf{Spatial quality correction}: For areas with known data quality issues (particularly informal settlements with limited administrative data), we will implement targeted correction factors derived from community-based validation exercises.
+    
+    \item \textbf{Ensemble methods for uncertainty quantification}: By combining multiple modeling approaches with different sensitivity to data quality issues, we will generate robust confidence intervals that reflect true prediction uncertainty.
+    
+    \item \textbf{Temporal stability analysis}: We will explicitly test how vulnerability patterns have changed over the 20-year study period, with particular attention to informal settlement growth areas and regions undergoing significant urban transformation.
+\end{enumerate}
+
+These approaches directly address concerns about varying data quality across Johannesburg's diverse urban contexts and ensure that model outputs appropriately reflect underlying confidence levels, particularly in areas where traditional data collection faces significant challenges.
 
 \subsection{Forecast Window Selection}
 The 24--72 hour forecast window was selected based on three key considerations. First, physiological evidence indicates that significant heat-health impacts manifest within 1-3 days of exposure \citep{Gasparrini2015, Kinney2020}, making this the critical intervention window for preventative healthcare measures. Second, meteorological forecast accuracy significantly degrades beyond 72 hours, particularly for urban microclimates, limiting the actionable reliability of longer-term predictions. Third, stakeholder consultations with healthcare providers indicated that a 1-3 day window optimally balances advance warning with operational response capabilities in Johannesburg's healthcare system. Sensitivity analysis will test alternative windows (12--24 hours and 72--120 hours) to assess the stability of predictive relationships across different temporal scales.

@@ -3,15 +3,15 @@
 \contentsline {section}{\numberline {1}Introduction and Background}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Climate Change and Heat-Health Impacts in the Johannesburg Context}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Socio-Spatial Inequity and Heat Vulnerability}{1}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Research Context and Positionality}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Research Context and Positionality}{2}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Conceptual Framework and Research Gaps}{2}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Recent Evidence and Research Gaps}{3}{subsection.1.5}%
 \contentsline {section}{\numberline {2}Aims and Objectives}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Primary Research Question}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Objectives}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Objective 1: Geographically Weighted Heat Vulnerability Mapping}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Objective 2: Causal Mechanisms of Heat-Health Relationships}{4}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Objective 3: Predictive Modeling for Early Warning Systems}{4}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.1}Primary Aim}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Three Interconnected Objectives}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Objective 1: Vulnerability Mapping (Descriptive)}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Objective 2: Heat-Health Dynamics (Explanatory)}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Objective 3: Predictive Modeling (Predictive)}{4}{subsubsection.2.2.3}%
 \contentsline {section}{\numberline {3}Methodology}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Study Design}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Data Sources and Collection}{5}{subsection.3.2}%
@@ -27,12 +27,13 @@
 \contentsline {subsubsection}{\numberline {3.5.2}Temporal Heat Exposure Modeling}{8}{subsubsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.6}Objective 3: Predictive Modeling}{9}{subsection.3.6}%
 \contentsline {subsubsection}{\numberline {3.6.1}Model Accuracy and Reliability Measures}{9}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Data Quality Variability Management}{10}{subsubsection.3.6.2}%
 \contentsline {subsection}{\numberline {3.7}Forecast Window Selection}{10}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Ethical Considerations}{10}{section.4}%
-\contentsline {section}{\numberline {5}Expected Outcomes and Impact}{11}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Research Outputs}{11}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Anticipated Impact and Infrastructural Justice Framing}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Knowledge Translation}{12}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Project Timeline}{13}{section.6}%
+\contentsline {section}{\numberline {4}Ethical Considerations}{11}{section.4}%
+\contentsline {section}{\numberline {5}Expected Outcomes and Impact}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Research Outputs}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Anticipated Impact and Infrastructural Justice Framing}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Knowledge Translation}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Project Timeline}{14}{section.6}%
 \contentsline {section}{\numberline {7}Supervision}{14}{section.7}%
 \contentsline {section}{\numberline {8}References}{}{section.8}%

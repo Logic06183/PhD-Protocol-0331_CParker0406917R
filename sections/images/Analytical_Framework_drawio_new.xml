@@ -1,0 +1,133 @@
+<![CDATA[<mxfile host="app.diagrams.net" modified="2025-04-23T10:00:00.000Z" agent="Cascade" version="21.7.5" type="device">
+  <diagram id="framework_v4" name="Conceptual Framework">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Urban Heat Vulnerability Analysis: Conceptual Framework" style="text;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;fontColor=#006666;spacingTop=0;spacingBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="30" width="800" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Vulnerability Components with Arrows -->
+        <mxCell id="components" value="VULNERABILITY COMPONENTS" style="text;fontSize=16;fontStyle=1;align=center;spacingTop=0;spacingBottom=0;html=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="150" y="90" width="800" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="exposure" value="EXPOSURE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;shadow=0;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="130" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sensitivity" value="SENSITIVITY" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="130" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="adaptive" value="ADAPTIVE CAPACITY" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="130" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Factors for each component -->
+        <mxCell id="exposure_factors" value="• Urban Heat Islands&#xa;• Land Surface Temperature&#xa;• Vegetation Index&#xa;• Impervious Surface&#xa;• Building Density" style="text;fillColor=none;align=left;verticalAlign=top;fontSize=13;fontColor=#333333;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="190" width="240" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sensitivity_factors" value="• Age Demographics&#xa;• Pre-existing Health Conditions&#xa;• Comorbidities&#xa;• Physiological Factors&#xa;• Health Inequalities" style="text;fillColor=none;align=left;verticalAlign=top;fontSize=13;fontColor=#333333;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="430" y="190" width="240" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="adaptive_factors" value="• Air Conditioning Access&#xa;• Housing Quality&#xa;• Healthcare Access&#xa;• Green Space Proximity&#xa;• Income Levels" style="text;fillColor=none;align=left;verticalAlign=top;fontSize=13;fontColor=#333333;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="710" y="190" width="240" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Analytical Lenses Header -->
+        <mxCell id="lenses_header" value="ANALYTICAL LENSES" style="text;fontSize=16;fontStyle=1;align=center;spacingTop=0;spacingBottom=0;html=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="150" y="310" width="800" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Three lenses -->
+        <mxCell id="lens1" value="INFRASTRUCTURAL JUSTICE" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="350" width="240" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lens1_desc" value="• Unequal access to protective infrastructure&#xa;• Spatial disparities in urban development" style="text;fillColor=none;align=center;verticalAlign=top;fontSize=13;fontColor=#333333;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="420" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lens2" value="CLIMATE RESILIENCE" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="350" width="240" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lens2_desc" value="• Adaptive capacity building&#xa;• Climate-ready urban planning" style="text;fillColor=none;align=center;verticalAlign=top;fontSize=13;fontColor=#333333;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="430" y="420" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lens3" value="HEALTH EQUITY" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="350" width="240" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lens3_desc" value="• Differential health outcomes&#xa;• Identifying vulnerable populations" style="text;fillColor=none;align=center;verticalAlign=top;fontSize=13;fontColor=#333333;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="710" y="420" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Research Phases Header -->
+        <mxCell id="phases_header" value="RESEARCH PHASES" style="text;fontSize=16;fontStyle=1;align=center;spacingTop=0;spacingBottom=0;html=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="150" y="490" width="800" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Research Phases with Arrows -->
+        <mxCell id="phase1" value="1. VULNERABILITY MAPPING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="530" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="phase1_desc" value="Spatial analysis of heat vulnerability patterns across Johannesburg" style="text;fillColor=none;align=center;verticalAlign=top;fontSize=13;fontColor=#333333;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="590" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow1" value="" style="endArrow=block;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="phase1" target="phase2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="555" as="sourcePoint" />
+            <mxPoint x="430" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="phase2" value="2. CAUSAL ANALYSIS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="530" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="phase2_desc" value="Identifying mechanisms driving heat-health outcomes through causal inference" style="text;fillColor=none;align=center;verticalAlign=top;fontSize=13;fontColor=#333333;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="430" y="590" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow2" value="" style="endArrow=block;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="phase2" target="phase3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="555" as="sourcePoint" />
+            <mxPoint x="710" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="phase3" value="3. PREDICTIVE MODELING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="530" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="phase3_desc" value="Forecasting heat-health risks and identifying critical thresholds" style="text;fillColor=none;align=center;verticalAlign=top;fontSize=13;fontColor=#333333;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="710" y="590" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Methodological Approaches -->
+        <mxCell id="methods_header" value="KEY METHODOLOGICAL APPROACHES" style="text;fontSize=16;fontStyle=1;align=center;spacingTop=0;spacingBottom=0;html=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="150" y="660" width="800" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="methods" value="• Geographically Weighted Principal Component Analysis (GW-PCA)&#xa;• Causal Machine Learning (PC Algorithm, Double Machine Learning)&#xa;• Spatio-temporal Distributed Lag Non-linear Models (DLNM)&#xa;• Ensemble Prediction with Uncertainty Quantification" style="text;fillColor=none;align=left;verticalAlign=top;fontSize=13;fontColor=#333333;spacingLeft=0;spacingTop=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="150" y="700" width="800" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Note on Scope -->
+        <mxCell id="scope_note" value="Note: This research focuses on understanding vulnerability patterns, causal mechanisms, and predictive capabilities.&#xa;The development and implementation of interventions falls outside the scope of this PhD." style="text;fillColor=#f5f5f5;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;strokeColor=#666666;rounded=1;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="790" width="800" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>]]>

@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: references.bib
-Warning--empty journal in IPCC2024
-You've used 29 entries,
+You've used 31 entries,
             1935 wiz_defined-function locations,
-            661 strings with 9670 characters,
-and the built_in function-call counts, 11130 in all, are:
-= -- 1081
-> -- 512
+            678 strings with 10361 characters,
+and the built_in function-call counts, 12296 in all, are:
+= -- 1188
+> -- 598
 < -- 18
-+ -- 186
-- -- 174
-* -- 966
-:= -- 2018
-add.period$ -- 91
-call.type$ -- 29
-change.case$ -- 229
-chr.to.int$ -- 29
-cite$ -- 30
-duplicate$ -- 375
-empty$ -- 715
-format.name$ -- 218
-if$ -- 2098
++ -- 218
+- -- 206
+* -- 1087
+:= -- 2230
+add.period$ -- 98
+call.type$ -- 31
+change.case$ -- 256
+chr.to.int$ -- 31
+cite$ -- 31
+duplicate$ -- 401
+empty$ -- 774
+format.name$ -- 252
+if$ -- 2313
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 152
-num.names$ -- 87
-pop$ -- 154
+missing$ -- 23
+newline$ -- 163
+num.names$ -- 93
+pop$ -- 172
 preamble$ -- 1
-purify$ -- 229
+purify$ -- 255
 quote$ -- 0
-skip$ -- 299
+skip$ -- 317
 stack$ -- 0
-substring$ -- 756
-swap$ -- 21
+substring$ -- 829
+swap$ -- 23
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
-warning$ -- 1
-while$ -- 86
+type$ -- 186
+warning$ -- 0
+while$ -- 93
 width$ -- 0
-write$ -- 378
-(There was 1 warning)
+write$ -- 408
